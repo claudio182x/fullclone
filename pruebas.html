@@ -1,0 +1,488 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+img.izquierda {
+  float: left;
+}
+
+img.derecha {
+  float: right;
+  right: 200px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+}
+
+/*div{
+	
+	width: 100px;
+	height: 100px;
+	background: #000;
+	color:#fff;
+	font-size: 15px;
+
+font-family: montserrat;
+text-align: center;
+
+}*/
+
+
+
+.caja img:hover {
+  background-color: #0099cc;
+}
+.caja
+{
+	position: relative;
+	top: 0;
+	bottom:
+	right:;	
+	left:0;
+	background: #03A2E7;
+	float: left;
+	height: 286px;
+	width: 386px;
+	text-align: center;
+padding: 2em 0 0 0 ;
+	
+
+}
+
+
+.caja2
+{
+	position: relative;
+	top:0;
+	bottom:
+	right:;	
+	left:0 ;
+	background: #0978B5;
+	float: left;
+	height: 286px;
+	width: 386px;
+	text-align: center;
+padding: 2em 0 0 0 ;
+
+
+}
+
+
+.caja3
+{
+	position: relative;
+	top: 0;
+	bottom:
+	right:;	
+	left: 0;
+	background: #063359;
+	float: left;
+	height: 286px;
+	width: 386px;
+	text-align: center;
+	padding: 2em 0 0 0 ;
+
+
+}
+
+
+.linea {
+  border-top: 0px solid #ffffff;
+  height: 2px;
+  max-width: 200px;
+  padding: 0;
+  margin: -6px auto 0 auto;
+}
+
+.centrado{
+	text-align: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+
+.area_verde{
+
+ background-color:#87C241;
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+
+h1.my-4 {
+   color: #fff;
+}
+.txt400{ font-weight: 450; text-align: left;}
+h1.txt_verde{ color: #87C241; } 
+.txt_verde{ color: #87C241; }
+.txt_blanco{ color: #FFF; }
+.martop20{margin-top: 20px;}
+.martop50{margin-top: 50px;}
+.martop150{margin-top: 150px;}
+.paddtop100{ padding-top: 100px; }
+.txt_azul{ color: #0A202D; }
+
+ @media screen and (max-width:480px) { 
+    
+     #nosotros{ width: 50%; } 
+     .col-xs-6{ width: 50%; }
+     .galeri{ margin-bottom:20px; }
+     #area_nosotros .col-xs-6{ width: 100%; }
+
+     @media screen and (max-width:768px) { 
+  .carousel-item{  background-size: contain !important;height: 36vh;  margin-top:0px;}
+  #nosotros{ width: 100% }
+
+ }
+
+
+
+.padre {
+  height: 200px;
+  width: 200px;
+  background: yellow;
+  
+  /* IMPORTANTE */
+  display: flex;
+  align-items: center;
+}
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+
+.imagen{
+	display: inline-block;
+	width: 40%;
+	vertical-align: middle;
+}
+
+.imagen img{
+	width: 100%
+}
+
+.texto{
+width: 40%;
+display: inline-block;;
+vertical-align:middle; 
+
+}
+
+
+.area_verde{
+
+ background-color:#0f006b;
+ padding-top: ;
+ padding-bottom: 20px;
+}
+
+
+.dere {
+    float: right;
+    margin: 1em 0 1em 1em;
+}
+.dere p {
+    margin: .5em 0;
+    text-align: right;
+}
+
+
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+  <!-- <div class="dere">
+    <img style="float: right;margin: 4px -484px 22px 15px;"  src="nosotros.png">
+    <p>Lorem ipsum dolor sit amet.</p> float: right;margin: 4px -484px 22px 15px;
+</div> -->
+
+
+ <a name="nosotros" id="nosotros"></a>
+        <div class="area_verde">
+        <div class="container">
+
+  <div class="row" id="area_nosotros">
+	
+   <br clear="right"> 
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                  <h1 class="my-4">asdasdasd asdasdasd asdasd</h1>
+
+                   <p> <b>(Nació Abril 25, 1960)</b></p>
+                  <div class="txt400">
+                    <p>Es un empresario mexicano, conocido por ser Presidente del Consejo y Accionista de Control de Grupo Avalanz. Es fundador de diferentes empresas como
+la Universidad CNCI, Todito Cash, Zignia, Arena Monterrey, Superboletos, y
+propietario del periódico El Horizonte, entre otras. Ha sido considerado como
+uno de los cincuenta empresarios más exitosos de México.  </p> </br>
+ <p>Sus empresas operan en diferentes áreas como espectáculos, sistemas financieros de medios de pago, educación, entretenimiento y sitios de información
+digitales.  </p>
+<button type="button" class="btn btn-primary">Leer más</button>
+                  </div>
+
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                 <img  class="mt-2"  class="derecha" src="nosotros.png" width="100%" height="100%"  id="nosotros"> 
+                </div> 
+                            </div> 
+
+
+          
+
+
+          </div> 
+
+
+        </div> 
+
+<button type="button" class="btn btn-primary">Primary</button>
+
+
+
+
+
+
+
+            <!-- <div class="row" id="area_nosotros">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                 <img align="left" src="./oreon_files/img/nosotros.png" width="100%" height="100%"  id="nosotros"> 
+                </div> 
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                  <h1 class="my-4">Nosotros</h1>
+
+                  <div class="txt400">
+                    <p> Empresa regimonotana con más de 10 años de experiencia en el área industrial, hospitales, colonias y empresas que nos han formado a ser uno de los líderes en el mercado de las empresas de seguridad privada y empresas privadas. </p>
+
+
+                  </div>
+                </div>
+            </div>  -->
+     
+
+
+<!-- <div class="header">
+  <h1>Chania</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 menu">
+    <ul>
+    <li>The Flight</li>
+    <li>The City</li>
+    <li>The Island</li>
+    <li>The Food</li>
+    </ul>
+  </div>
+
+  <div class="col-6">
+    <h1>The City</h1>
+    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+  </div>
+
+  <div class="col-3 right">
+    <div class="aside">
+      <h2>What?</h2>
+      <p>Chania is a city on the island of Crete.</p>
+      <h2>Where?</h2>
+      <p>Crete is a Greek island in the Mediterranean Sea.</p>
+      <h2>How?</h2>
+      <p>You can reach Chania airport from all over Europe.</p>
+    </div>
+  </div>
+
+
+<div class=" caja">
+	<img src="images/barrita/h.png" width="100px" height="100px">
+<h2>Historia Familiar</h2>
+<div class="linea"></div>
+<p>La familia Salinas se ha destacado en el siglo XX. Cuando el bisuabuelo de</p>
+</div>
+
+<div class=" caja2">
+	<img src="images/barrita/run.png"width="100px" height="100px">
+<h2>Carrera</h2>
+<div class="linea"></div>
+<p>Desde jove. Salinas Pliego. Mostro pasion por el emprendimiento</p>
+</div>
+
+<div class=" caja3">
+	<img src="images/barrita/c.png" width="100px" height="100px">
+<h2>Consejos</h2>
+<div class="linea"></div>
+<p>Asi mismo Salinas Pliego tambien es consejero en diversas empresas como</p>
+</div>
+</div>
+
+
+
+  <a name="nosotros" id="nosotros"></a>
+        <div class="area_verde">
+
+          <div class="container">
+
+            <div class="row" id="area_nosotros">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                  <img class="derecha" src="images/guillermo_salinas_pliego_home.png" id="nosotros" width="416px" height="730px">
+                </div> 
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                  <h1 class="my-4">Nosotros</h1>
+
+                  <div class="txt400" >
+                    <p> En CLOVER somos un conjunto de arquitectos y diseñadores que trabajamos con conceptos y diseños que reflejan el buen gusto de nuestros clientes, siendo precisos al elegir materiales, texturas y colores que inspiren.</p>
+                    <p>Nuestros diseños van enfocados a las necesidades de nuestros clientes, que busquen calidad diseño y vanguardia. </p>
+
+
+                  </div>
+                </div>
+            </div> 
+
+            
+          </div> 
+
+
+        </div> 
+
+
+
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div> -->
+
+
+</body>
+</html>
